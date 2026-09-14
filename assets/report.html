@@ -11,23 +11,29 @@
 @media(max-width:700px){main{padding:0 24px}header{padding:23px 0;letter-spacing:.02em}.edition{display:none}.hero{min-height:0;padding:48px 0 52px}.orbit{right:-15px;top:65px;width:160px;height:240px;opacity:.12}h1{font-size:clamp(38px,9.3vw,58px)}.intro{font-size:15px}.story{grid-template-columns:1fr;gap:22px;padding:32px 0 42px}.num{font-size:28px}h2{font-size:29px}.insight{font-size:15px}.moments{grid-template-columns:1fr}.moment{padding:20px}blockquote{font-size:20px}.section-label{gap:8px;font-size:10px}.share-section{padding:42px 0}.share-card{padding:30px 25px}.share-card:after{font-size:130px}.share-quote{font-size:31px}.signature{margin-top:35px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media print{main{max-width:none;padding:0 15px}.actions,.status,.text-link,.orbit{display:none}.hero{min-height:0;padding:35px 0}.story{break-inside:avoid}.share-card{print-color-adjust:exact;-webkit-print-color-adjust:exact}details{display:none}}
+
+/* Shared content, three distinct typographic and material treatments. */
+.presets{padding:20px 0;border-bottom:1px solid var(--line);font-size:12px}.presets>span{color:var(--muted)}.presets>div{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}.presets button{padding:9px 16px;min-height:44px;background:transparent;border:1px solid var(--line);color:var(--ink);border-radius:4px;font-size:13px}.presets button[aria-pressed=true]{background:var(--ink);color:var(--paper);border-color:var(--ink)}#preset-note{margin:6px 0 0;color:var(--muted)}.portrait{padding:40px 0 50px}.deck{position:relative;margin:32px 10px 0 0;isolation:isolate;touch-action:pan-y;outline-offset:8px}.back{position:absolute;inset:0;border:1px solid var(--line);background:#e7e5d9;border-radius:8px;pointer-events:none}.back-one{transform:translate(6px,-7px) rotate(1deg);z-index:-1}.back-two{transform:translate(10px,-14px) rotate(1.8deg);z-index:-2;background:#eeede5}.share-card{background:#fbfaf6;color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:34px 42px;min-height:410px;display:flex;flex-direction:column;transition:opacity .16s,transform .28s;box-shadow:none}.share-card:after{display:none}.card-top{display:flex;justify-content:space-between;gap:20px;font:11px/1.5 var(--sans);letter-spacing:.12em}.share-brand{color:var(--muted)}.signature{color:var(--accent);margin-top:30px}.share-quote{font:500 clamp(32px,4.7vw,56px)/1.5 var(--serif);letter-spacing:-.04em;margin:14px 0 16px;max-width:100%;min-height:0}.share-quote:after{display:none}#card-detail{max-width:620px;margin:0;color:var(--muted);font-size:14px;line-height:1.9}.share-card .text-link{align-self:flex-start;margin-top:22px;font-size:12px}.deck-controls{display:flex;align-items:center;gap:12px;margin-top:18px;font-size:12px;color:var(--muted)}.deck-controls button{width:44px;height:44px;background:transparent;border:1px solid var(--line);color:var(--ink);border-radius:4px}.deck-controls button:disabled{opacity:.25;cursor:default}.swipe-hint{margin-left:auto}.primary,.secondary{border-radius:5px}.story{scroll-margin-top:24px}body[data-preset=print]{--paper:#eeede7;--ink:#111;--muted:#595954;--accent:#dc301e;--line:#111;--serif:var(--sans)}body[data-preset=print] header{border-bottom:3px solid var(--ink)}body[data-preset=print] .share-card{background:var(--accent);color:#fff9ed;border:2px solid var(--ink);border-radius:0;padding:34px 42px}body[data-preset=print] .share-brand,body[data-preset=print] .signature,body[data-preset=print] #card-detail{color:#fff9ed}body[data-preset=print] .share-quote{font-weight:850;line-height:1.3;letter-spacing:-.055em;margin:22px 0}body[data-preset=print] .back{border:2px solid #111;border-radius:0;background:#d0cfc6}body[data-preset=print] .back-two{background:#f8f7f0}body[data-preset=print] .share-card .text-link{border-color:#fff9ed}body[data-preset=print] button,body[data-preset=print] .moment{border-radius:0}body[data-preset=print] h2{font-weight:750}body[data-preset=print] .section-label{border-top-width:3px}body[data-preset=print] .num{font-family:var(--sans);font-style:normal;font-weight:850}body[data-preset=soft]{--paper:#eff2f5;--ink:#25323e;--muted:#667580;--accent:#386657;--line:#d3dce2}body[data-preset=soft] .deck{padding:7px;background:#f8fafb;border:1px solid white;border-radius:32px;box-shadow:0 16px 40px -20px #65758066}body[data-preset=soft] .share-card{border:1px solid #ffffff;background:#e1ebe7;border-radius:25px;padding:34px 36px}body[data-preset=soft] .share-quote{font-family:var(--sans);font-weight:650;letter-spacing:-.05em}body[data-preset=soft] .back{border:1px solid white;border-radius:32px;background:#e4e9f1;box-shadow:0 10px 24px -20px #667580}body[data-preset=soft] .back-one{transform:translate(5px,-8px) rotate(1.6deg)}body[data-preset=soft] .back-two{background:#f5f8fa;transform:translate(9px,-15px) rotate(2.7deg)}body[data-preset=soft] button{border-radius:40px}body[data-preset=soft] .moment{border-radius:18px;background:#e6ebef}body[data-preset=soft] .story{border-bottom:0}body[data-preset=soft] .origin{border-color:#93b3a7}body[data-preset=soft] h2{font-family:var(--sans);font-weight:600}body[data-preset=soft] .num{color:#7b978d}.deck:focus-visible{outline:3px solid var(--accent)}
+@media(max-width:700px){main{padding:0 20px}.portrait{padding-top:28px}.presets button{padding:8px 11px}.share-card,body[data-preset=print] .share-card{padding:24px 22px;min-height:410px}.share-quote{font-size:clamp(27px,7.5vw,42px)}body[data-preset=soft] .share-card{padding:24px 18px}.signature{font-size:12px}.card-top{font-size:9px;gap:8px}.swipe-hint{font-size:10px;max-width:110px;line-height:1.5}.deck-controls{gap:8px}#card-detail{font-size:13px}.actions button{padding:10px 15px}.back-two{transform:translate(7px,-12px) rotate(1.3deg)}body[data-preset=soft] .back-two{transform:translate(7px,-12px) rotate(1.8deg)}}
+@media(prefers-reduced-motion:reduce){.share-card{transition:none}}
+@media print{.presets,.deck-controls{display:none}.share-card{min-height:0}}
 </style>
 </head>
 <body>
 <main>
 <header><span class="brand">决定性瞬间 / THE DECISIVE MOMENT</span><span class="edition">一份关于你的 TASTE 肖像</span></header>
-<section class="hero" aria-labelledby="headline">
-<div class="orbit" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
-<div class="eyebrow">那些你早已做出，却未曾命名的判断</div>
-<h1 id="headline"></h1><p id="intro" class="intro"></p><a class="text-link" href="#stories">回到那些瞬间 ↘</a>
+<nav class="presets" aria-label="报告风格预览"><span>预设试衣间</span><div><button data-preset="editorial">A · 纸上肖像</button><button data-preset="print">B · 宣言海报</button><button data-preset="soft">C · 柔光卡组</button></div><p id="preset-note"></p></nav>
+<section class="portrait" aria-label="你的 taste 金句">
+<div class="eyebrow">TASTE PORTRAIT</div>
+<div class="deck" tabindex="0" role="region" aria-roledescription="轮播" aria-label="Taste 金句，左右方向键切换">
+<div class="back back-two" aria-hidden="true"></div><div class="back back-one" aria-hidden="true"></div>
+<div class="share-card"><div class="card-top"><span class="share-brand">THE DECISIVE MOMENT</span><span id="card-number"></span></div><div class="signature" id="signature"></div><h1 class="share-quote" id="share-quote"></h1><p id="card-detail"></p><a class="text-link" id="story-link">看见这份判断的来处 ↗</a></div>
+</div>
+<div class="deck-controls"><span id="position" aria-live="polite"></span><span class="swipe-hint">左右滑动，看看另一面的你</span><button id="prev" aria-label="上一条 taste">←</button><button id="next" aria-label="下一条 taste">→</button></div>
+<div class="actions"><button type="button" class="primary" id="download">保存这张金句卡片 ↗</button><button type="button" class="secondary" id="copy">复制这句话</button></div><p class="status" id="status" aria-live="polite">卡片只含金句与题签，不含对话原文和来源。</p>
 </section>
-<div class="section-label"><span>你的判断，有自己的来处</span><span id="count"></span></div>
+<div class="section-label"><span>这些判断，是怎样长出来的？</span><span id="count"></span></div>
 <section id="stories" aria-label="决定性瞬间"></section>
-<section class="share-section" aria-labelledby="share-heading">
-<div id="share-heading" class="share-header">把这句话，留给自己。</div>
-<div class="share-card"><div class="share-brand">THE DECISIVE MOMENT</div><div class="signature" id="signature"></div><p class="share-quote" id="share-quote"></p><div class="share-caption">从真实选择中，看见自己的 taste。<br>一份文学化的个人观察</div></div>
-<div class="actions"><button type="button" class="primary" id="download">保存金句卡片 PNG ↗</button><button type="button" class="secondary" id="copy">复制这句话</button></div><p class="status" id="status" aria-live="polite">卡片只含上方金句与题签，不含对话原文和来源。</p>
-</section>
 <footer><span id="scope"></span><br>这是一份基于有限记录的文学化观察，不是人格测评。金句是概括，原话与来源见各段展开项。<div class="foot-brand">决定性瞬间 · TASTE HAS A HISTORY.</div></footer>
 <noscript>请在浏览器中允许 JavaScript 以查看报告。对应 Markdown 报告保留完整证据。</noscript>
 </main>
@@ -38,29 +44,40 @@
 const d=JSON.parse(document.getElementById('report-data').textContent);
 const byId=id=>document.getElementById(id);
 const el=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n;};
-byId('headline').textContent=d.headline;byId('intro').textContent=d.intro;byId('signature').textContent=d.signature;byId('share-quote').textContent=d.share;byId('scope').textContent=d.scope;byId('count').textContent=String(d.stories.length).padStart(2,'0')+' 条判断线索';
+byId('scope').textContent=d.scope;byId('count').textContent=String(d.stories.length).padStart(2,'0')+' 条判断线索';
 d.stories.forEach((s,i)=>{
- const article=el('article','story');article.append(el('div','num',String(i+1).padStart(2,'0')));
+ const article=el('article','story');article.id='story-'+i;article.append(el('div','num',String(i+1).padStart(2,'0')));
  const content=el('div');content.append(el('h2','',s.title),el('p','insight',s.insight));
- const moments=el('div','moments');s.moments.forEach(m=>{const card=el('div','moment');card.append(el('div','date',m.date),el('blockquote','',m.quote),el('p','context',m.context));moments.append(card);});content.append(moments);
- const origin=el('div','origin');origin.append(el('strong','','它可能从这里长出来'),el('p','',s.origin));content.append(origin);
+ const moments=el('div','moments');s.moments.forEach(m=>{const card=el('div','moment');card.append(el('div','date',m.date),el('blockquote','',m.quote),el('p','context',m.context));moments.append(card);});
+ const origin=el('div','origin');origin.append(el('strong','','它可能从这里长出来'),el('p','',s.origin));content.append(origin,moments);
  const evidence=el('details','evidence');evidence.append(el('summary','','展开原文来源与解释边界 ＋'),el('p','',s.limit));s.moments.forEach(m=>evidence.append(el('p','source',m.date+' · '+m.source)));content.append(evidence);article.append(content);byId('stories').append(article);
 });
+const cards=d.tastes||[{signature:d.signature,share:d.share,detail:d.intro,story:0}];
+let current=0,preset=d.preset||'print';
+const notes={editorial:'A / 纸上肖像 · 留白、宋体与温暖纸感，像一页关于你的杂志。',print:'B / 宣言海报 · 粗体、朱红与硬边线，把你的判断写成一句宣言。',soft:'C / 柔光卡组 · 柔和银灰、圆角与层次，像翻开一叠私藏卡片。'};
+function show(index){const previous=current;current=Math.max(0,Math.min(cards.length-1,index));const t=cards[current];byId('signature').textContent=t.signature;byId('share-quote').textContent=t.share;byId('card-detail').textContent=t.detail;byId('story-link').href='#story-'+t.story;byId('card-number').textContent=String(current+1).padStart(2,'0')+' / '+String(cards.length).padStart(2,'0');byId('position').textContent=(current+1)+' / '+cards.length;byId('prev').disabled=current===0;byId('next').disabled=current===cards.length-1;byId('status').textContent='卡片只含金句与题签，不含对话原文和来源。';if(previous!==current&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.querySelector('.share-card').animate([{opacity:.45,transform:'translateX('+(current>previous?18:-18)+'px)'},{opacity:1,transform:'translateX(0)'}],{duration:240,easing:'cubic-bezier(.32,.72,0,1)'});}
+function setPreset(value){preset=value;document.body.dataset.preset=value;byId('preset-note').textContent=notes[value];document.querySelectorAll('[data-preset]').forEach(b=>{if(b.tagName==='BUTTON')b.setAttribute('aria-pressed',String(b.dataset.preset===value));});}
+byId('prev').onclick=()=>show(current-1);byId('next').onclick=()=>show(current+1);
+const deck=document.querySelector('.deck');deck.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();show(current+(e.key==='ArrowRight'?1:-1));}});
+let start=null;deck.addEventListener('pointerdown',e=>{if(e.target.closest('a,button'))return;start={x:e.clientX,y:e.clientY};});deck.addEventListener('pointerup',e=>{if(!start)return;const dx=e.clientX-start.x,dy=e.clientY-start.y;start=null;if(Math.abs(dx)>45&&Math.abs(dx)>Math.abs(dy)*1.3)show(current+(dx<0?1:-1));});deck.addEventListener('pointercancel',()=>{start=null;});
+document.querySelectorAll('.presets button').forEach(b=>b.onclick=()=>setPreset(b.dataset.preset));document.querySelector('.presets').hidden=!d.compare;document.querySelectorAll('.back').forEach(n=>n.hidden=cards.length<2);document.querySelector('.swipe-hint').hidden=cards.length<2;show(0);setPreset(preset);
 function wrap(ctx,text,maxWidth){const lines=[];for(const para of text.split('\n')){let line='';for(const ch of Array.from(para)){if(line&&ctx.measureText(line+ch).width>maxWidth){lines.push(line);line=ch;}else line+=ch;}lines.push(line);}return lines;}
 byId('download').addEventListener('click',async()=>{
  try{
+ const selected=cards[current], selectedPreset=preset;
  await document.fonts.ready;
  const canvas=document.createElement('canvas');canvas.width=1080;canvas.height=1350;const c=canvas.getContext('2d');
- c.fillStyle='#252820';c.fillRect(0,0,1080,1350);c.fillStyle='#ced0bd';c.font='22px sans-serif';c.fillText('THE DECISIVE MOMENT',84,100);
- c.fillStyle='#c7ca82';c.font='210px serif';c.fillText('*',865,260);
- c.fillStyle='#e3ad74';c.font='28px sans-serif';const labels=wrap(c,d.signature,800);labels.slice(0,3).forEach((l,i)=>c.fillText(l,84,325+i*42));
- let size=82,lines;do{c.font='500 '+size+'px "Songti SC", "STSong", serif';lines=wrap(c,d.share,900);if(lines.length*size*1.55<=650)break;size-=2;}while(size>24);
- c.fillStyle='#f3f0e7';lines.forEach((line,i)=>c.fillText(line,84,470+i*size*1.55));
- c.strokeStyle='#737763';c.beginPath();c.moveTo(84,1160);c.lineTo(996,1160);c.stroke();c.fillStyle='#c4c6b5';c.font='25px sans-serif';c.fillText('从真实选择中，看见自己的 taste。',84,1220);c.font='20px sans-serif';c.fillText('决定性瞬间 · 一份文学化的个人观察',84,1275);
- const blob=await new Promise(resolve=>canvas.toBlob(resolve,'image/png'));if(!blob)throw new Error('image');const url=URL.createObjectURL(blob);const a=el('a');a.href=url;a.download='my-decisive-moment.png';a.click();setTimeout(()=>URL.revokeObjectURL(url),3000);byId('status').textContent='卡片已生成。只包含金句与题签，不含私人原文。';
+ const colors={editorial:['#fbfaf6','#252820','#bc421e'],print:['#dc301e','#fff9ed','#fff9ed'],soft:['#e1ebe7','#25323e','#386657']}[selectedPreset];
+ c.fillStyle=colors[0];c.fillRect(0,0,1080,1350);c.fillStyle=colors[1];c.font='22px sans-serif';c.fillText('THE DECISIVE MOMENT',84,100);
+ c.fillStyle=colors[2];c.font='210px serif';c.fillText('*',865,260);
+ c.fillStyle=colors[2];c.font='28px sans-serif';const labels=wrap(c,selected.signature,800);labels.slice(0,3).forEach((l,i)=>c.fillText(l,84,325+i*42));
+ let size=82,lines;do{c.font=(selectedPreset==='editorial'?'500 ':'700 ')+size+(selectedPreset==='editorial'?'px "Songti SC", "STSong", serif':'px sans-serif');lines=wrap(c,selected.share,900);if(lines.length*size*1.55<=650)break;size-=2;}while(size>24);
+ c.fillStyle=colors[1];lines.forEach((line,i)=>c.fillText(line,84,470+i*size*1.55));
+ c.strokeStyle='#737763';c.beginPath();c.moveTo(84,1160);c.lineTo(996,1160);c.stroke();c.fillStyle=colors[1];c.font='25px sans-serif';c.fillText('从真实选择中，看见自己的 taste。',84,1220);c.font='20px sans-serif';c.fillText('决定性瞬间 · 一份文学化的个人观察',84,1275);
+ const blob=await new Promise(resolve=>canvas.toBlob(resolve,'image/png'));if(!blob)throw new Error('image');const url=URL.createObjectURL(blob);const a=el('a');a.href=url;a.download='my-taste-'+(cards.indexOf(selected)+1)+'-'+selectedPreset+'.png';a.click();setTimeout(()=>URL.revokeObjectURL(url),3000);byId('status').textContent='卡片已生成。只包含金句与题签，不含私人原文。';
  }catch(e){byId('status').textContent='图片未能保存，可以截取上方卡片，或复制这句话。';}
 });
-byId('copy').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(d.share.replace(/\n/g,''));byId('status').textContent='已复制。';}catch(e){const range=document.createRange();range.selectNodeContents(byId('share-quote'));const selection=window.getSelection();selection.removeAllRanges();selection.addRange(range);byId('status').textContent='已选中金句，请使用系统复制。';}});
+byId('copy').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(cards[current].share.replace(/\n/g,''));byId('status').textContent='已复制。';}catch(e){const range=document.createRange();range.selectNodeContents(byId('share-quote'));const selection=window.getSelection();selection.removeAllRanges();selection.addRange(range);byId('status').textContent='已选中金句，请使用系统复制。';}});
 })();
 </script>
 </body>

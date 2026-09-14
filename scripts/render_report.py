@@ -6,7 +6,7 @@ from pathlib import Path
 
 
 def render(data, template):
-    for key in ("headline", "intro", "signature", "share", "scope"):
+    for key in ("scope",):
         if not isinstance(data.get(key), str) or not data[key].strip():
             raise ValueError(f"{key} must be a nonempty string")
     stories = data.get("stories")
@@ -22,6 +22,25 @@ def render(data, template):
             for key in ("date", "quote", "context", "source"):
                 if not isinstance(moment.get(key), str):
                     raise ValueError(f"moment.{key} must be a string")
+    tastes = data.get("tastes")
+    if tastes is None:  # Compatibility with the original single-card report.
+        for key in ("signature", "share", "intro"):
+            if not isinstance(data.get(key), str) or not data[key].strip():
+                raise ValueError(f"{key} must be a nonempty string")
+    else:
+        if not isinstance(tastes, list) or not tastes:
+            raise ValueError("tastes must be a nonempty list")
+        for taste in tastes:
+            for key in ("signature", "share", "detail"):
+                if not isinstance(taste.get(key), str) or not taste[key].strip():
+                    raise ValueError(f"taste.{key} must be a nonempty string")
+            index = taste.get("story")
+            if type(index) is not int or not 0 <= index < len(stories):
+                raise ValueError("taste.story must point to an existing story")
+    if data.get("preset", "print") not in ("editorial", "print", "soft"):
+        raise ValueError("unknown preset")
+    if "compare" in data and type(data["compare"]) is not bool:
+        raise ValueError("compare must be a boolean")
     # Data never becomes executable markup, including quotes containing </script>.
     payload = json.dumps(data, ensure_ascii=False).replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026")
     marker = "__REPORT_DATA__"
