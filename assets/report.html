@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>决定性瞬间 · 你的 Taste 肖像</title>
+<style>
+:root{--paper:#f3f0e7;--ink:#252820;--muted:#64675c;--accent:#bc421e;--line:#cecec0;--serif:"Songti SC","STSong","Noto Serif CJK SC",serif;--sans:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.8 var(--sans)}button,a{touch-action:manipulation}button{font:inherit;cursor:pointer}button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:5px}a{color:inherit}::selection{background:#edd2a8}main{max-width:1120px;margin:auto;padding:0 60px}header{display:flex;justify-content:space-between;gap:20px;align-items:center;padding:30px 0;border-bottom:1px solid var(--line);font-size:12px;letter-spacing:.13em}.brand{font-weight:650}.edition{color:var(--muted)}.hero{position:relative;overflow:hidden;padding:76px 0 68px;min-height:660px}.eyebrow{font-size:12px;color:var(--accent);letter-spacing:.14em;display:flex;align-items:center;gap:12px}.eyebrow:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--accent)}h1{font:500 clamp(44px,6.1vw,74px)/1.25 var(--serif);letter-spacing:-.04em;margin:26px 0 30px;max-width:790px;white-space:pre-line;position:relative;z-index:1}h1:after{content:"";display:block;width:80px;height:4px;background:var(--accent);margin-top:30px}.intro{max-width:565px;color:#55594e;font-size:17px;line-height:2}.orbit{position:absolute;right:-6px;top:75px;width:250px;height:340px;overflow:hidden;opacity:.22;pointer-events:none;transform:rotate(25deg)}.orbit i{position:absolute;inset:20px;border:1px solid #8c916f;border-radius:50%}.orbit i:nth-child(2){inset:40px}.orbit i:nth-child(3){inset:60px}.orbit i:nth-child(4){inset:80px}.orbit:after{content:"";position:absolute;bottom:49px;right:59px;width:22px;height:22px;border-radius:50%;background:var(--accent)}.text-link{display:inline-block;text-decoration:none;border-bottom:1px solid var(--ink);margin-top:20px;padding:8px 0;font-size:13px}.section-label{display:flex;align-items:center;gap:20px;border-top:1px solid var(--ink);padding:20px 0;font-size:12px;letter-spacing:.1em;color:var(--muted)}.section-label span:last-child{margin-left:auto}.story{display:grid;grid-template-columns:60px 1fr;gap:25px;padding:44px 0 60px;border-bottom:1px solid var(--line)}.num{font:italic 44px/1 var(--serif);color:var(--accent)}h2{font:500 clamp(28px,3.4vw,39px)/1.5 var(--serif);margin:-9px 0 22px;letter-spacing:-.025em}.insight{font-size:17px;max-width:730px;margin:0 0 30px;line-height:2}.moments{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:30px 0}.moment{padding:24px;background:#e8e8dc;border-radius:2px}.date{font-size:11px;letter-spacing:.1em;color:var(--muted)}blockquote{font:500 21px/1.8 var(--serif);margin:14px 0;color:var(--ink)}.context{font-size:13px;line-height:1.9;color:var(--muted);margin:0}.origin{border-left:2px solid var(--accent);padding-left:20px;margin:30px 0}.origin strong{font-size:12px;color:var(--accent);font-weight:500}.origin p{font-size:15px;line-height:1.9;margin:8px 0}.evidence{font-size:12px;color:var(--muted);margin-top:24px}summary{cursor:pointer;padding:10px 0;width:fit-content;min-height:44px}.evidence p{margin:10px 0;line-height:1.9}.source{overflow-wrap:anywhere;padding:12px 0;border-top:1px solid var(--line)}.share-section{padding:70px 0}.share-header{font-size:12px;letter-spacing:.08em;margin-bottom:18px;color:var(--muted)}.share-card{position:relative;background:var(--ink);color:var(--paper);padding:42px 45px;overflow:hidden}.share-card:after{content:"*";font:180px/1 var(--serif);position:absolute;right:20px;top:20px;color:#c7ca82;opacity:.7}.share-brand{font-size:11px;letter-spacing:.12em;color:#ced0bd}.signature{position:relative;font-size:13px;color:#e3ad74;margin-top:38px;z-index:1}.share-quote{font:500 clamp(29px,4vw,45px)/1.55 var(--serif);max-width:620px;margin:18px 0 30px;position:relative;z-index:1;white-space:pre-line}.share-caption{font-size:11px;color:#c4c6b5;max-width:78%}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}.primary,.secondary{border:1px solid var(--ink);border-radius:30px;padding:11px 23px;min-height:46px;font-size:13px}.primary{background:var(--ink);color:var(--paper)}.secondary{background:transparent;color:var(--ink)}.status{font-size:12px;color:var(--muted);min-height:24px;margin:10px 0 0}footer{padding:25px 0 45px;border-top:1px solid var(--line);color:var(--muted);font-size:11px;line-height:1.9}.foot-brand{margin-top:18px;letter-spacing:.12em;color:var(--accent)}noscript{display:block;padding:30px}
+@media(max-width:700px){main{padding:0 24px}header{padding:23px 0;letter-spacing:.02em}.edition{display:none}.hero{min-height:0;padding:48px 0 52px}.orbit{right:-15px;top:65px;width:160px;height:240px;opacity:.12}h1{font-size:clamp(38px,9.3vw,58px)}.intro{font-size:15px}.story{grid-template-columns:1fr;gap:22px;padding:32px 0 42px}.num{font-size:28px}h2{font-size:29px}.insight{font-size:15px}.moments{grid-template-columns:1fr}.moment{padding:20px}blockquote{font-size:20px}.section-label{gap:8px;font-size:10px}.share-section{padding:42px 0}.share-card{padding:30px 25px}.share-card:after{font-size:130px}.share-quote{font-size:31px}.signature{margin-top:35px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{main{max-width:none;padding:0 15px}.actions,.status,.text-link,.orbit{display:none}.hero{min-height:0;padding:35px 0}.story{break-inside:avoid}.share-card{print-color-adjust:exact;-webkit-print-color-adjust:exact}details{display:none}}
+</style>
+</head>
+<body>
+<main>
+<header><span class="brand">决定性瞬间 / THE DECISIVE MOMENT</span><span class="edition">一份关于你的 TASTE 肖像</span></header>
+<section class="hero" aria-labelledby="headline">
+<div class="orbit" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+<div class="eyebrow">那些你早已做出，却未曾命名的判断</div>
+<h1 id="headline"></h1><p id="intro" class="intro"></p><a class="text-link" href="#stories">回到那些瞬间 ↘</a>
+</section>
+<div class="section-label"><span>你的判断，有自己的来处</span><span id="count"></span></div>
+<section id="stories" aria-label="决定性瞬间"></section>
+<section class="share-section" aria-labelledby="share-heading">
+<div id="share-heading" class="share-header">把这句话，留给自己。</div>
+<div class="share-card"><div class="share-brand">THE DECISIVE MOMENT</div><div class="signature" id="signature"></div><p class="share-quote" id="share-quote"></p><div class="share-caption">从真实选择中，看见自己的 taste。<br>一份文学化的个人观察</div></div>
+<div class="actions"><button type="button" class="primary" id="download">保存金句卡片 PNG ↗</button><button type="button" class="secondary" id="copy">复制这句话</button></div><p class="status" id="status" aria-live="polite">卡片只含上方金句与题签，不含对话原文和来源。</p>
+</section>
+<footer><span id="scope"></span><br>这是一份基于有限记录的文学化观察，不是人格测评。金句是概括，原话与来源见各段展开项。<div class="foot-brand">决定性瞬间 · TASTE HAS A HISTORY.</div></footer>
+<noscript>请在浏览器中允许 JavaScript 以查看报告。对应 Markdown 报告保留完整证据。</noscript>
+</main>
+<script type="application/json" id="report-data">__REPORT_DATA__</script>
+<script>
+(() => {
+'use strict';
+const d=JSON.parse(document.getElementById('report-data').textContent);
+const byId=id=>document.getElementById(id);
+const el=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n;};
+byId('headline').textContent=d.headline;byId('intro').textContent=d.intro;byId('signature').textContent=d.signature;byId('share-quote').textContent=d.share;byId('scope').textContent=d.scope;byId('count').textContent=String(d.stories.length).padStart(2,'0')+' 条判断线索';
+d.stories.forEach((s,i)=>{
+ const article=el('article','story');article.append(el('div','num',String(i+1).padStart(2,'0')));
+ const content=el('div');content.append(el('h2','',s.title),el('p','insight',s.insight));
+ const moments=el('div','moments');s.moments.forEach(m=>{const card=el('div','moment');card.append(el('div','date',m.date),el('blockquote','',m.quote),el('p','context',m.context));moments.append(card);});content.append(moments);
+ const origin=el('div','origin');origin.append(el('strong','','它可能从这里长出来'),el('p','',s.origin));content.append(origin);
+ const evidence=el('details','evidence');evidence.append(el('summary','','展开原文来源与解释边界 ＋'),el('p','',s.limit));s.moments.forEach(m=>evidence.append(el('p','source',m.date+' · '+m.source)));content.append(evidence);article.append(content);byId('stories').append(article);
+});
+function wrap(ctx,text,maxWidth){const lines=[];for(const para of text.split('\n')){let line='';for(const ch of Array.from(para)){if(line&&ctx.measureText(line+ch).width>maxWidth){lines.push(line);line=ch;}else line+=ch;}lines.push(line);}return lines;}
+byId('download').addEventListener('click',async()=>{
+ try{
+ await document.fonts.ready;
+ const canvas=document.createElement('canvas');canvas.width=1080;canvas.height=1350;const c=canvas.getContext('2d');
+ c.fillStyle='#252820';c.fillRect(0,0,1080,1350);c.fillStyle='#ced0bd';c.font='22px sans-serif';c.fillText('THE DECISIVE MOMENT',84,100);
+ c.fillStyle='#c7ca82';c.font='210px serif';c.fillText('*',865,260);
+ c.fillStyle='#e3ad74';c.font='28px sans-serif';const labels=wrap(c,d.signature,800);labels.slice(0,3).forEach((l,i)=>c.fillText(l,84,325+i*42));
+ let size=82,lines;do{c.font='500 '+size+'px "Songti SC", "STSong", serif';lines=wrap(c,d.share,900);if(lines.length*size*1.55<=650)break;size-=2;}while(size>24);
+ c.fillStyle='#f3f0e7';lines.forEach((line,i)=>c.fillText(line,84,470+i*size*1.55));
+ c.strokeStyle='#737763';c.beginPath();c.moveTo(84,1160);c.lineTo(996,1160);c.stroke();c.fillStyle='#c4c6b5';c.font='25px sans-serif';c.fillText('从真实选择中，看见自己的 taste。',84,1220);c.font='20px sans-serif';c.fillText('决定性瞬间 · 一份文学化的个人观察',84,1275);
+ const blob=await new Promise(resolve=>canvas.toBlob(resolve,'image/png'));if(!blob)throw new Error('image');const url=URL.createObjectURL(blob);const a=el('a');a.href=url;a.download='my-decisive-moment.png';a.click();setTimeout(()=>URL.revokeObjectURL(url),3000);byId('status').textContent='卡片已生成。只包含金句与题签，不含私人原文。';
+ }catch(e){byId('status').textContent='图片未能保存，可以截取上方卡片，或复制这句话。';}
+});
+byId('copy').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(d.share.replace(/\n/g,''));byId('status').textContent='已复制。';}catch(e){const range=document.createRange();range.selectNodeContents(byId('share-quote'));const selection=window.getSelection();selection.removeAllRanges();selection.addRange(range);byId('status').textContent='已选中金句，请使用系统复制。';}});
+})();
+</script>
+</body>
+</html>

@@ -4,3 +4,12 @@
 !/.gitignore
 !/SKILL.md
 !/README.md
+!/assets/
+/assets/*
+!/assets/report.html
+!/scripts/
+/scripts/*
+!/scripts/render_report.py
+!/references/
+/references/*
+!/references/report-design.md
