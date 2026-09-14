@@ -1,0 +1,6 @@
+# Publish only the distributable skill and documentation.
+# Local transcripts, generated reports, credentials and editor files stay untracked.
+/*
+!/.gitignore
+!/SKILL.md
+!/README.md
